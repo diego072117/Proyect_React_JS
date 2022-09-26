@@ -1,5 +1,5 @@
 
- import { Navigate } from "react-router-dom";
+ import { Link } from "react-router-dom";
 import logov from "./Hotelia horizontal blanco.svg";    
 
 import "./nav.css";
@@ -15,13 +15,13 @@ function nav(){
         </div>
  
         <div class="menu ocultar">
-            <a href="#" className="item">Inicio</a>
+            {/* <a href="#" className="item">Inicio</a>
             <a href="#" className="item">Ubícanos</a>
             <a className="item">Opiniones</a>
-            <hr href="#" class="menu-hr" noshade=""/>
+            <hr href="#" class="menu-hr" noshade=""/> */}
 
-            <Navigate to='/Login' className="item"><button class="navbar-button">
-            <i class="fa-solid fa-user"></i> Iniciar Sesión</button></Navigate> 
+            <Link to='/login' className="item"><button class="navbar-button">
+            <i class="fa-solid fa-user"></i> Iniciar Sesión</button> </Link> 
         </div>
     </nav>
     );
