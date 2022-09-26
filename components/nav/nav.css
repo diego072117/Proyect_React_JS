@@ -1,0 +1,135 @@
+@media only screen and (min-width: 320px) {
+    /*BARRA DE NAVEGACION MODILE*/
+
+
+
+    .item {
+        padding: 1rem;
+    }
+
+    .logo {
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 40%;
+        max-width: 200px;
+    }
+
+
+
+    .logo i {
+        color: var(--blanco);
+        font-size: 2rem;
+    }
+
+
+
+    .menu {
+        background-color: rgba(1, 10, 52, 0.838);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform .6s ease;
+    }
+
+    .menu-hr {
+        width: 90%;
+        border-color: var(--blanco);
+    }
+
+    .item {
+        padding: 1rem;
+    }
+
+    nav a {
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+
+    }
+
+    /* nav a:hover {
+        background-color: #0B3860;
+        width: 100%;
+    } */
+
+    .navbar-button {
+        background-color: transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: 'Marcellus', serif;
+        color: var(--blanco);
+    }
+
+    nav {
+        top: 0;
+        font-family: 'Marcellus', serif;
+        font-size: 1.3em;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .ocultar {
+        transform: translateY(-100em);
+    }
+
+    .open {
+        transform: translateY(0);
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    /*BARRA DE NAVEGACION DESKTOP*/
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
+        
+    }
+
+    .logo {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .logo i {
+        display: none;
+    }
+
+    .menu {
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        transform: translateY(0);
+    }
+
+    .menu-hr {
+        display: none;
+    }
+
+    .navbar-button {
+        background-color: var(--azuloscuro);
+    }
+}
+

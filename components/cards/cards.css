@@ -1,0 +1,207 @@
+@media only screen and (min-width: 320px) {
+
+     /*TARJETAS*/
+
+     .tarjeta {
+        margin: 1em;
+        /* width: 0;
+        height: 0; */
+        background: var(--degradado);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        color: var(--fondo);
+        border-radius: 5px;
+    }
+
+    .tarjeta .img div {
+        display: flex;
+        width: 5em;
+        height: 5em;
+        border-radius: 100%;
+         background-image: url(lala.jpeg);
+        background-size: 100%;
+    }
+
+    .tarjeta .usuario {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #0B3860;
+         background-image: url(Group\ 200.svg);
+        background-size: 92%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        padding: 2rem 1em 1em 1em;
+        border-radius: 5px 5px 100% 18%;
+    }
+
+    .tarjeta .text {
+        padding: 0.5em 2em 2em 2em;
+    }
+
+    .tarjeta .usuario h3 {
+        padding-bottom: 0.5em;
+    }
+
+    .tarjeta .usuario .user {
+        margin-left: 1.5em;
+    }
+
+    .tarjeta .usuario .star i {
+        font-size: 1.5em;
+    }
+
+    #estrella {
+        color: var(--Magenta);
+    }
+
+    .opinion .titulo {
+        background-color: var(--negro);
+        color: var(--blanco);
+        padding: 1em;
+        letter-spacing: 2px;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1em;
+        text-align: center;
+        width: inherit;
+    }
+
+    .opiniones {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 60em;
+        margin-top: 5em;
+    }
+
+    .opinion {
+        display: flex;
+        padding-bottom: 20%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 50%;
+    }
+
+
+
+    /*FIN TARJETAS*/
+
+}
+
+@media screen and (min-width: 1024px) {
+
+     /*TARJETAS*/
+
+    /* opiniones */
+    .tarjeta {
+        margin: 1em;
+        width: 50%;
+        height: 16em;
+        background: var(--degradado);
+        display: flex;
+        flex-direction: column;
+        color: var(--fondo);
+        border-radius: 5px;
+    }
+
+    .tarjeta .img div {
+        width: 5em;
+        height: 5em;
+        border-radius: 100%;
+        background-image: url(lala.jpeg);
+        background-size: 100%;
+    }
+
+    .tarjeta .usuario {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #0B3860;
+        background-image: url(Group\ 200.svg);
+        background-size: 50%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        padding: 2rem 1em 1em 1em;
+        border-radius: 5px 5px 100% 18%;
+    }
+
+    .tarjeta .text {
+        padding: 0.5em 2em 2em 2em;
+    }
+
+    .tarjeta .usuario h3 {
+        padding-bottom: 0.5em;
+    }
+
+    .tarjeta .usuario .user {
+        margin-left: 1.5em;
+    }
+
+    .tarjeta .usuario .star i {
+        font-size: 1.5em;
+    }
+
+    #estrella {
+        color: var(--Magenta);
+    }
+
+    .opinion .titulo {
+        background-color: var(--negro);
+        color: var(--blanco);
+        padding: 2em;
+        letter-spacing: 2px;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .opiniones {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 6em;
+        background-color: var(--negro);
+        margin-top: 0;
+    }
+
+    .opinion {
+        display: flex;
+        padding-bottom: 20%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 100%;
+        height: 50%;
+    }
+
+    .elements {
+   
+        text-align: center;
+        margin-top: -2em;
+        margin-left: 50%;
+    
+    }
+    
+    .quadrate {
+        cursor: pointer;
+        height: 4px;
+        width: 20px;
+        margin: 0 2px;
+        background-color: #717171;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        border-radius: 2px;
+    }
+
+
+    /*FIN TARJETAS*/
+
+}

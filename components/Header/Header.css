@@ -1,0 +1,96 @@
+@media screen and (min-width: 320px) {
+
+    .body {
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .login {
+
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 5%; */
+        /* border: 5px solid #8e1bb8; */
+        background-color: #3379b7ad;
+        color: #fff;
+        margin: 10%;
+    }
+
+    /*IMAGEN*/
+    .svg {
+        width: 100%;
+
+    }
+
+    .login img {
+        display: flex;
+        width: 35%;
+        padding-left: 5%;
+        padding-top: 12%;
+        float: left;
+        margin-top: -90px;
+    }
+
+    .login i {
+        margin-top: 5%;
+        font-size: 2.8em;
+        justify-content: center;
+        align-self: center;
+        color: var(--Magenta);
+        background-color: #fff;
+        border-radius: 50%;
+        line-height: 40px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .body {
+    
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    
+        .login {
+            width: 30em;
+            display: flex;
+            flex-direction: column;
+            /* margin-top: 5%; */
+            /* border: 5px solid #8e1bb8; */
+            background-color: #3379b7ad;
+            color: #fff;
+        }
+    
+        /*IMAGEN*/
+        .svg {
+            width: 100%;
+            height: 5em;
+        }
+    
+        .login img {
+            display: flex;
+            width: 170px;
+            padding: 10px;
+            /* float: left; */
+            /* margin-top: -140px; */
+        }
+    
+        .login i {
+            margin-top: 5%;
+            font-size: 4em;
+            justify-content: center;
+            align-self: center;
+            color: var(--Magenta);
+            background-color: #fff;
+            border-radius: 50%;
+            line-height: 53px;
+            height: 50px;
+        }
+
+}
