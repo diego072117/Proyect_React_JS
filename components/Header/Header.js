@@ -29,7 +29,7 @@ function Header() {
                         <input type="password" placeholder="***" />
                     </div>
                     <div class="button">
-                        <a href="dashboard.html">Ingresar</a>
+                        <Link to='/dashboard'> Ingresar</Link> 
 
                     </div>
 

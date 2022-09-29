@@ -1,0 +1,217 @@
+@media screen and (min-width: 720px) {
+
+    #banner{
+
+        height: 350px;
+        width: 100%;
+
+    }
+
+    .introduccion-parrafo {
+        padding: 25px;
+        width: 25em;
+        font-size: 20px;
+    }
+
+    .introduccion-logo img {
+        display: flex;
+        align-items: center;
+        width: 160px;
+        height: 240px;
+        margin-left: 1em;
+        margin-top: 4em;
+    }
+
+    .titulo p{
+        font-size: 1.3em;
+        font-family: 'Marcellus', serif;
+     }
+
+      /* opiniones */
+
+
+    .opiniones{
+        display: flex;
+        margin-top: -5em;
+    }
+
+    .tarjeta {
+        margin: 1em;
+        width: 60%;
+        height: 16em;
+        background: var(--degradado);
+        display: flex;
+        color: var(--fondo);
+        border-radius: 5px;
+        margin-left: 20%;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+    .index-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
+        
+    }
+
+    .logo {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .logo i {
+        display: none;
+    }
+
+    .menu {
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        transform: translateY(0);
+    }
+
+    .menu-hr {
+        display: none;
+    }
+
+    .navbar-button {
+        background-color: var(--azuloscuro);
+        cursor: pointer;
+    }
+
+    #banner{
+
+        height: 700px;
+        width: 100%;
+
+    }
+
+      /*DESCRIPCION DESKTOP*/
+      .introduccion {
+        display: flex;
+     
+        padding: 2em;
+        justify-content: center;
+        align-items: center;
+      
+
+    }
+
+    .introduccion-parrafo {
+        padding: 25px;
+        width: 50em;
+        font-size: 1.5em;
+    }
+
+
+    .introduccion-logo img {
+        display: flex;
+        align-items: center;
+        width: 240px;
+        height: 240px;
+    }
+
+    /*FIN DESCRIPCION*/
+
+
+     /*FEATURES*/
+
+
+    .features-title{
+        margin-top: -1em;
+    }
+
+    .features-description{
+        margin: 2em;
+    }
+
+    /*END FEATURES*/
+
+     /*MAPA DESKTOP*/
+
+     .ubicacion {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em;
+        text-align: center;
+
+    }
+
+    .mapa {
+        width: 100%;
+        height: 35em;
+    }
+
+    .ubicacion h2 {
+        color: var(--negro2);
+        font-size: 3em;
+        padding: 1em;
+    }
+
+    .direccion {
+        display: flex;
+        font-family: 'Marcellus', serif;
+        font-size: 2em;
+        justify-content: center;
+        line-height: 2em;
+        flex-direction: column;
+    }
+
+    .direccion hr {
+        width: 50%;
+        border-color: var(--azuloscuro);
+        text-align: center;
+        margin-left: 25%;
+
+
+    }
+
+    /*FIN MAPA*/
+
+    /*TARJETAS*/
+
+    .titulo p{
+        font-size: 2em;
+        font-family: 'Marcellus', serif;
+     }
+
+      /* opiniones */
+         
+    .opiniones {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 6em;
+        background-color: var(--negro);
+        margin-top: 0;
+    }
+
+    .tarjeta {
+        margin: 1em;
+        width: 50%;
+        height: 16em;
+        background: var(--degradado);
+        display: flex;
+        flex-direction: column;
+        color: var(--fondo);
+        border-radius: 5px;
+    }
+  
+}

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) {
+
 
  /*UBICACION modile*/
 
@@ -42,56 +42,5 @@
 
 }
 
-/*FIN UBICACION*/
-
-}
-
-@media screen and (min-width: 1024px) {
-
-     /*MAPA DESKTOP*/
-
-     .ubicacion {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2em;
-        text-align: center;
-
-    }
-
-    .mapa {
-        width: 100%;
-        height: 35em;
-    }
-
-    .ubicacion h2 {
-        color: var(--negro2);
-        font-size: 3em;
-        padding: 1em;
-    }
-
-    .direccion {
-        display: flex;
-        font-family: 'Marcellus', serif;
-        font-size: 2em;
-        justify-content: center;
-        line-height: 2em;
-        flex-direction: column;
-    }
-
-    .direccion hr {
-        width: 50%;
-        border-color: var(--azuloscuro);
-        text-align: center;
-        margin-left: 25%;
-
-
-    }
-
-    /*FIN MAPA*/
-
-
-}
 
 
