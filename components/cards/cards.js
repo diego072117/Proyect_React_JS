@@ -1,4 +1,4 @@
-import logov from "./lala.jpeg";
+// import logov from "./lala.jpeg";
 
 import "./cards.css";
 function cards(){
@@ -7,7 +7,7 @@ function cards(){
       
         <section class="opinion">
             <div class="titulo">
-                <h1>Nuestros usuarios dicen...</h1>
+                <p>Nuestros usuarios dicen...</p>
             </div>
             <div class="opiniones">
         

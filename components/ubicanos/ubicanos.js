@@ -1,6 +1,8 @@
-
+import React from "react";
 import "./ubicanos.css";
 function ubicanos(){
+
+    
     return(
         <section class="ubicacion">
         <h2>Ubícanos</h2>
