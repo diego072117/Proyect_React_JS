@@ -47,7 +47,7 @@
         padding: 1rem;
     }
 
-    nav a {
+    .nav a {
         color: var(--blanco);
         text-decoration: none;
         text-align: center;
@@ -69,7 +69,7 @@
         color: var(--blanco);
     }
 
-    nav {
+    .nav {
         top: 0;
         font-family: 'Marcellus', serif;
         font-size: 1.3em;
@@ -93,7 +93,7 @@
 @media screen and (min-width: 1024px) {
 
     /*BARRA DE NAVEGACION DESKTOP*/
-    nav {
+    .nav {
         display: flex;
         flex-direction: row;
         width: 100%;

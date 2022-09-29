@@ -1,0 +1,29 @@
+@media screen and (min-width: 320px) {
+    
+
+    /*BARRA DE NAVEGACION*/
+    .slider {
+        display: flex;
+        width: 22em;
+        height: 100%; 
+        flex-direction: column;
+        background: linear-gradient(49.54deg, rgba(69, 162, 243, 0.863) 2.89%, rgba(6, 55, 99, 0.89) 80.34%);
+        align-items: center;
+        color: var(--blanco);
+        margin-top: 8%;
+    }
+
+    .slider img {
+        width: 35%;
+        padding-top: 5%;
+    }
+
+    .slider h1 {
+        padding: 2%;
+        font-size: 2em;
+        margin-left: 0em;
+        text-align: center;
+        /* padding-bottom: 100%; */
+    }
+
+}
