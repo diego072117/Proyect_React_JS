@@ -16,10 +16,10 @@ function Error() {
             </div>
             <div class='c'>
                 <div class='_404'>404</div>
-                <hr className="hr"/>
+                <hr className="hr-error"/>
                     <div class='_1'>THE PAGE</div>
                     <div class='_2'>WAS NOT FOUND</div>
-                <Link to='/' class='btn'>BACK </Link>
+                <Link to='/' class='btn-error'>BACK </Link>
             </div>
         </html>
     );

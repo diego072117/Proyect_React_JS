@@ -1,6 +1,6 @@
 
 // import React, { useState } from 'react'
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import logoDash from "./hotelia campana.svg";
 import lala from "../cards/lala.jpeg";
 
@@ -12,53 +12,50 @@ function NavDash() {
 
 
 
-    return (    
+    return (
 
-        <nav className="navDash">
+        <nav className="dash-nav">
             <ul>
                 <li>
 
-                    <section class="fondo-dash">
-                        <section class="hotel-logo-dash">
-                            <img src={logoDash} alt="logo" />
-                            <p class="nav-title-dash">otelia</p>
-                            <img class="img-person-dash" src={lala} alt="" />
-                            <section class="name-user-dash">
+                    <section class="img-fondo">
+                        <section class="logo">
+                            <img src={logoDash} alt="" />
+                            <p class="nav-title">otelia</p>
+                            <img class="img-person" src={lala} alt="" />
+                            <section class="name-user">
                                 <p>Angie Vargas</p>
-                                <p class="gmail-user-dash">angievargas2@gmail.com</p>
+                                <p class="gmail-user">angievargas2@gmail.com</p>
                             </section>
                         </section>
 
-                    </section> 
+                    </section>
 
 
                 </li>
-                <li><Link className="links-dash">
-                    <i class="fas-dash fa-solid fa-bed icon-dash"/>
-                    <span class="nav-item-dash">Habitaciones</span>
-                </Link>
+                <li><a className="dash-a" href="#">
+                    <i class="fas fa-solid fa-bed icon"></i>
+                    <span class="nav-item">Habitaciones</span>
+                </a>
                 </li>
-                <li><Link className="links-dash">
-                    <i class=" fas-dash fa-solid fa-bell-concierge icon-dash"/>
-                    <span class="nav-item-dash">Habitaciones</span>
-                </Link></li>
-                <li><Link className="links-dash">
-                    <i class="fas-dash fa-solid fa-bed icon-dash"/>
-                    <span class="nav-item-dash">Habitaciones</span>
-                </Link></li>
-                <li><Link className="links-dash">
-                    <i class=" fas-dash fa-solid fa-bell-concierge icon-dash"/>
-                    <span class="nav-item-dash">Habitaciones</span>
-                </Link></li>
+                <li><a className="dash-a" href="#">
+                    <i class="fas fa-solid fa-bell-concierge icon"></i>
+                    <span class="nav-item">Reservas</span>
+                </a></li>
+                <li><a className="dash-a" href="#">
+                    <i class="fas fa-solid fa-bed icon"></i>
+                    <span class="nav-item">Habitaciones</span>
+                </a></li>
+                <li><a className="dash-a" href="#">
+                    <i class=" fas fa-solid fa-bell-concierge icon"></i>
+                    <span class="nav-item">Habitaciones</span>
+                </a></li>
 
-                <li><Link href="#" class="logout-dash links-dash">
-                    <i class=" fas-dash fa-solid fa-arrow-right-from-bracket icon-dash"/>
-                    <span class="nav-item-dash">Cerrar Sesion</span>
-                </Link></li>
+                <li><a className="dash-a" href="index.html" class="logout">
+                    <i class=" fas fa-solid fa-arrow-right-from-bracket icon"></i>
+                    <span class="nav-item">Cerrar Sesion</span>
+                </a></li>
             </ul>
-            
-     
-
         </nav>
 
     );

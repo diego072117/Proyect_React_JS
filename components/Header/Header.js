@@ -31,7 +31,7 @@ function Header() {
                     <div class="button">
                         <Link to='/dashboard'> Ingresar</Link> 
 
-                    </div>
+                    </div> 
 
                     <label class="link">¿No tiene una cuenta?
                         
