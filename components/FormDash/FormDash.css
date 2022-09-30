@@ -5,10 +5,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin-left: 80px;
-        height: 62em;
-      
-
-        transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        height: 79em;
+        overflow: hidden;
     }
 
     .imput-dashboard{
@@ -86,11 +84,21 @@
         margin-top: 20px;
         width: 65%;
         height: 30px;
-        background-color: var(--negro2);
+        background: var(--azulnegro);
         color: #fff;
         border-radius: 3px;
         align-items: center;
         justify-content: center;
     }
-    
 
+    .button-dashboard:hover{
+        background: var(--azuloscuro);
+    }
+
+    .Update-password{
+        display: none;
+    }
+
+    .Update-password:hover{
+        background: var(--azuloscuro);
+    }

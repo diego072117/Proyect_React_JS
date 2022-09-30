@@ -31,6 +31,7 @@ function dashForm() {
                             <i class="fa-solid fa-download"></i>
                         </div>
 
+                        <a class="Update-password" href="">Cambiar cotraseña</a>
 
                     </div>
 

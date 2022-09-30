@@ -19,6 +19,7 @@
         }
     
         .nav-title-dash {
+            font-family: 'Playfair Display', serif;
             color: var(--blanco);
             font-size: 50px;
             margin-left: 15px;
