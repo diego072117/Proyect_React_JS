@@ -1,7 +1,7 @@
 
     /*BARRA DE NAVEGACION MODILE*/
 
-    nav {
+    .index-nav {
         top: 0;
         font-family: 'Marcellus', serif;
         font-size: 1.3em;
@@ -55,7 +55,7 @@
         padding: 1rem;
     }
 
-    nav a {
+    .index-nav a {
         color: var(--blanco);
         text-decoration: none;
         text-align: center;

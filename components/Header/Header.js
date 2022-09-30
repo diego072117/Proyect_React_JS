@@ -29,18 +29,19 @@ function Header() {
                         <input type="password" placeholder="***" />
                     </div>
                     <div class="button">
-                        <Link to='/dashboard'>Ingresar</Link>
+                        <Link to='/dashboard'> Ingresar</Link> 
 
-                    </div>
+                    </div> 
 
-                    <label class="link">¿No tiene una cuenta?<a href="register.html">Registrate aqui</a></label>
+                    <label class="link">¿No tiene una cuenta?
+                        
+                        <Link to='/register'> Registrate aqui</Link> 
+                    </label>
 
                 </form>
                 
             </div>
         </body>
-
-    
     );
 }
 

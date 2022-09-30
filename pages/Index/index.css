@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 1024px) {
     
-    nav {
+    .index-nav {
         display: flex;
         flex-direction: row;
         width: 100%;

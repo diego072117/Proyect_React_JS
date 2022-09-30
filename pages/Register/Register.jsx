@@ -2,14 +2,15 @@ import React from 'react';
 
 //import reportWebVitals from './reportWebVitals';
 
-import Header from "../../components/Header/Header";
+import  Formulario  from "../../components/FormularioReg/FormularioReg";
+// import  Nav from "../../components/NavRegis/NavRegis";
 import "./Register.css";
 
 function Register() {
     return (
         <div className='cont'>
-            <Header />
-
+            {/* <Nav /> */}
+            <Formulario />
         </div>
     );
 }

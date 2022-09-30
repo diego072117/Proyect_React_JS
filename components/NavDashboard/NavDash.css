@@ -1,110 +1,114 @@
-.navDash{
-    z-index: 1;
-    position: absolute;
-    height: 178.3%;
-    left: 0;
-    background: var(--azulnegro);
-    width: 80px; 
-    overflow: hidden;
-    transition: width 0.2s linear;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-}
-
-.hotel-logo-dash img{
-    position: absolute;
-    width: 4rem;
-    margin-top: 0.5em; 
-    margin-left: 8px;
-}
-
-.nav-title-dash{
-    position: relative;
-    font-family: 'Marcellus', serif;
-    color: var(--blanco);
-    font-size: 50px;
-    margin-left: 79px;
-    margin-top: 65px;
-}
-
-.fondo-dash{
-    position: relative;
-    width: 20.5em;
-    height: 12em;
-    margin-top: -3em;
-    background-image: url(./Group\ 200.svg);
-    background-size: cover;
-}
 
 
+    .dash-nav{
+            z-index: 1;
+            position: absolute;
+            height: 142.5%;
+            left: 0;
+            background: var(--azulnegro);
+            width: 80px;
+            overflow: hidden;
+            transition: width 0.2s linear;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        }
+    
+        .logo-dash img {
+            width: 4rem;
+            margin-top: 30px;
+            margin-left: -3.6em;
+        }
+    
+        .nav-title-dash {
+            color: var(--blanco);
+            font-size: 50px;
+            margin-left: 15px;
+            margin-top: -55px;
+        }
+    
+        .img-fondo {
+            position: relative;
+            width: 20.5em;
+            height: 14.5em;
+            top: -15px;
+            background-image: url(./Group\ 200.svg);
+            background-size: cover;
+         
+        }
+    
+        .logo-dash {
+            position: relative;
+            top: 10%;
+            left: 20%;
+        }
+    
+        .name-user {
+            position: relative;
+            color: var(--blanco);
+            padding-top: 8px;
+            left: 50px;
+            font-size: 26px;
+            margin-top: -45px;
+    
+        }
+    
+        .gmail-user {
+            font-size: 13px;
+          
+        }
+    
+    
+        .icon {
+            color: var(--blanco);
+        }
+    
+    
+    
+        .img-person {
+            width: 15%;
+            height: 15%;
+            border-radius: 50%;
+        }
+    
+    
+    
+                .dash-a {
+            position: relative;
+            color: rgb(85, 83, 83);
+            font-size: 14px;
+            display: table;
+            width: 380px;
+            padding: 10px;
+        }
+    
+        .fas {
+            position: relative;
+            width: 70px;
+            height: 40px;
+            top: 14px;
+            font-size: 20px;
+            text-align: center;
+        }
+    
+        .nav-item {
+            position: relative;
+            top: 12px;
+            margin-left: 10px;
+            color: var(--blanco);
+            font-size: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+    
+        .dash-a:hover {
+            background: var(--azuloscuro);
+        }
+    
+        .dash-nav:hover {
+            width: 280px;
+            transition: all 0.5s ease;
+        }
+    
+        .logout-dash {
+            position: absolute;
+            bottom: 0;
+        }
 
-.name-user-dash{
-    position: relative;
-    color: var(--blanco);
-    padding-top: 8px;
-    left: 100px;
-    font-size: 26px;
-    margin-top: 4em;
-   
-}
-
-.gmail-user-dash{
-    font-size: 13px;
-   
-}
-
-
-.icon-dash{
-    color: var(--blanco);
-}
-
-
-
-.img-person-dash{
-    height: 20%;
-    border-radius: 50%;
-}
-
-
-
-.links-dash{
-    position: relative;
-    font-size: 14px;
-    display: table;
-    width: 380px;
-    padding: 10px;
-
-}
-
-.fas-dash{
-    position: relative;
-    margin-left: -7.5em;
-    width: 70px;
-    height: 40px;
-    top: 14px;
-    font-size: 25px;
-    text-align: center;
-}
-
-.nav-item-dash{
-    position: relative;
-    top: 12px;
-    margin-left: 10px;
-    color: var(--blanco);
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
-}
-
-.links-dash:hover{
-    background: var(--azuloscuro);
-    transition: .2s ease-in-out;
-
-}
-
-.navDash:hover{
-    width: 280px;
-    transition: all 0.5s ease;
-}
-
-.logout-dash{
-    margin-top: 65em;
-}
