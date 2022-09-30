@@ -4,7 +4,8 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        overflow-y: hidden;
+        height: fit-content;
+      
 
     }
 
@@ -15,7 +16,9 @@
         background-color: #3379b7ad;
         color: #fff;
         margin: 10%;
-        height: 500em;
+        height: 26em;
+        /* height: fit-content; */
+        
     }
 
     /*IMAGEN*/

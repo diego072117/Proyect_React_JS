@@ -2,7 +2,6 @@
 // import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import logov from "./Hotelia horizontal blanco.svg";
-
 import "./nav.css";
 
 
@@ -14,6 +13,7 @@ function nav() {
     return (
         <nav className="index-nav">
             <div class="logo">
+
                 <img src={logov} alt="logo" />
                 <i class="fa-solid fa-bars hamburguer"></i>
             </div>

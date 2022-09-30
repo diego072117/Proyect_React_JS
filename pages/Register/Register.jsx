@@ -10,7 +10,7 @@ function Register() {
     return (
         <div className='cont'>
             {/* <Nav /> */}
-            <Formulario/>
+            <Formulario />
         </div>
     );
 }

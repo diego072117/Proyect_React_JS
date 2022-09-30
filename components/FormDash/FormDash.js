@@ -5,7 +5,7 @@ import "./FormDash.css";
 
 
 
-function dashForm({NombreSesion}) {
+function dashForm({NombreSesion,CambioContraseña}) {
 
 
 
@@ -31,7 +31,7 @@ function dashForm({NombreSesion}) {
                             <i class="fa-solid fa-download"></i>
                         </div>
 
-                        <a class="Update-password" href="">Cambiar cotraseña</a>
+                        <a class="Update-password" href="">{CambioContraseña}</a>
 
                     </div>
 

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) {
+
 
         /*FOOTER*/
 
@@ -58,83 +58,4 @@
     
         /*FOOTER*/
 
-}
 
-
-@media screen and (min-width: 1024px) {
-
-    /*footer desktop*/
-
-    footer {
-        display: flex;
-        margin-top: 2em;
-        background-color: var(--negro);
-        justify-content: space-between;
-        align-items: baseline;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-        padding: 0px;
-
-    }
-
-    footer #article {
-        margin-left: 5em;
-    }
-
-    footer article {
-        width: 50%;
-        color: #ffff;
-        padding: 0 1em;
-    }
-
-    footer hr {
-        display: none;
-    }
-
-    .iconos2 {
-        display: none;
-    }
-
-    .iconos i {
-
-        padding: 1em;
-        font-size: 150%;
-    }
-
-    .iconos {
-        display: flex;
-    }
-
-    .footer-direccion {
-        display: flex;
-        flex-direction: row;
-        padding: 1em 0;
-        align-items: baseline;
-
-    }
-
-    .politicas{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-
-    /* .footer-direccion i {
-        font-size: 120%;
-        padding-right: 2px;
-
-    } */
-
-
-    .politicas p {
-        padding: 1em;
-
-    }
-
-
-
-    /*fin footer*/
-
-}

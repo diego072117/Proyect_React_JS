@@ -10,7 +10,7 @@ import '../../index.css';
 import '../Index/index.css'
 
 
-function Init() {
+function Init(imagen) {
     return (
         <div className="container">
 
