@@ -1,6 +1,12 @@
-@media screen and (min-width: 320px) {
 
+    .body {
+        
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        overflow-y: hidden;
 
+    }
 
     .login {
 
@@ -9,6 +15,7 @@
         background-color: #3379b7ad;
         color: #fff;
         margin: 10%;
+        height: 500em;
     }
 
     /*IMAGEN*/
@@ -109,5 +116,4 @@
             text-align: center;
         }
 
-}
 

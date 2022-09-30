@@ -1,109 +1,128 @@
 import { Link } from "react-router-dom";
 import lala from "../cards/lala.jpeg";
 
-import "./FormDash.css"; 
+import "./FormDash.css";
 
 
 
-function dashForm() {
+function dashForm({NombreSesion}) {
 
 
 
     return (
 
-        <html className="calle-dash">
-            <article class="main-formDash">
+        <body className="fondo-dashboard">
 
-                <div class="img-perfil-formDash">
-                    <h2 className="dash-h2">Bienvenido, Angie Vargas</h2>
-                    <img className="dash-img" src={lala} alt="" />
-                </div>
+            <section class="formulario-dashboard">
 
-                <div class="download-formDash">
-                    <i class="icon-escond fa-solid fa-file-arrow-down"></i>
-                    <i class="fa-solid fa-download"></i>
-                </div>
-                    <Link class="Update-password" href="">Cambiar cotraseña</Link>
+                <div class="form-dashboard">
 
-                <div class="formulario-formDash">
-                    <div class="tipe-document">
-                        <label className="dash-label" for="TipoDoc">Tipo de documento</label><br />
-                        <input type="text" class="dash-input" placeholder="Cedula de Ciudadania" />
+
+                    <h2 class="titulo-dashboard">{NombreSesion}</h2>
+
+
+                    <div class="column-1-dashboard">
+                        <div class="profile">
+                            <img className="lala-dashboard" src={lala} alt="" />
+                        </div>
+
+                        <div class="download-dashboard">
+                            <i id="icon-1-dashboard" class="icon-escond fa-solid fa-file-arrow-down"></i>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+
+                        <a class="Update-password" href="">Cambiar cotraseña</a>
+
                     </div>
 
-                    <div class="name">
-                        <label className="dash-label" for="Nombre">Nombres</label><br />
-                        <input type="text" class="dash-input" placeholder="Angie Camila" />
+                    <div class="column-2-dashboard">
+                        <div class="form-group">
+                            <label className="label-dashboard" for="TipoDoc">Tipo de documento</label>
+                            <input type="text" class="form-control imput-dashboard" placeholder="Cedula de Ciudadania" />
+                        </div>
+
+                        <div class="form-group">
+                            <label className="label-dashboard" for="Nombre">Nombres</label>
+                            <input type="text" class="form-control imput-dashboard" placeholder="Angie Camila" />
+                        </div>
+
+                        <div class="form-group">
+                            <label className="label-dashboard" for="fecha">Fecha nacimiento</label>
+                            <input type="date" class="form-control imput-dashboard" placeholder="10/08/1976" />
+                        </div>
+
+                        <div class="form-check-dashboard">
+                            <h4>Género</h4>
+                            <div class="genero">
+                                <form class="checks-dashboard">
+                                    <label className="label-dashboard" class="radio-inline-dashboard">
+                                        <input type="radio" value="" name="genero" checked />Mujer
+                                    </label>
+                                    <label className="label-dashboard" class="radio-inline-dashboard">
+                                        <input type="radio" value="" name="genero" />Hombre
+                                    </label>
+                                    <label className="label-dashboard" class="radio-inline-dashboard">
+                                        <input type="radio" value="" name="genero" />Otro
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label className="label-dashboard" for="email">Email</label>
+                            <input type="email" class="form-control imput-dashboard" placeholder="angievargas2@gmail.com" />
+                        </div>
+
                     </div>
 
-                    <div class="date">
-                        <label className="dash-label" for="fecha">Fecha nacimiento</label><br />
-                        <input type="date" class="dash-input" />
-                    </div>
+                    <div class="column-3-dashboard">
+                        <div class="form-group">
+                            <label className="label-dashboard" for="NoDoc">Numero de documento</label>
+                            <input type="text" class="form-control imput-dashboard" placeholder="1025417456" />
+                        </div>
 
-                    <div class="form-check">
-                        <label className="dash-label">Género</label>
-                        <div class="genero">
-                            <form class="checks">
-                                <label className="dash-label" class="radio-inline">
-                                    <input type="radio" value="" name="genero" checked />Mujer
-                                </label>
-                                <label className="dash-label" class="radio-inline">
-                                    <input type="radio" value="" name="genero" />Hombre
-                                </label>
-                                <label className="dash-label" class="radio-inline">
-                                    <input type="radio" value="" name="genero" />Otro
-                                </label>
-                            </form>
+                        <div class="form-group">
+                            <label className="label-dashboard" for="Apellido">Apellidos</label>
+                            <input type="text" class="form-control imput-dashboard" placeholder="Vargas Pinzón" />
+                        </div>
+
+                        <div class="form-group">
+                            <label className="label-dashboard" for="Pais">País de origen</label>
+                            <input type="text" class="form-control imput-dashboard" placeholder="Colombia" />
+                        </div>
+
+                        <div class="form-group">
+                            <label className="label-dashboard" for="telefono">Teléfono de contacto</label>
+                            <input type="text" class="form-control imput-dashboard" placeholder="3135207460" />
                         </div>
                     </div>
 
-                    <div class="email">
-                        <label className="dash-label" for="email">Email</label><br />
-                        <input type="email" class="dash-input" placeholder="angievargas2@gmail.com" />
+                    <div class="footer-dashboard">
+                        <button class="button-dashboard">Actualizar</button>
+
+                        <br /><br />
+
+                        <div class="contraseñas-dashboard">
+                            <div class="contraseña-dashboard">
+                                <label className="label-dashboard" for="">Contraseña</label>
+                                <input type="password" class="form-control imput-dashboard" />
+                            </div>
+
+                            <div class="confirmar-dashboard">
+                                <label className="label-dashboard" for="">Confirmar contraseña</label>
+                                <input type="password" class="form-control imput-dashboard" />
+                            </div>
+                        </div>
+                        <button class="button-dashboard">Cambiar</button>
+
                     </div>
-
-                    <div class="num-doc">
-                        <label className="dash-label" for="NoDoc">Numero de documento</label><br />
-                        <input type="text" class="dash-input" placeholder="1025417456" />
-                    </div>
-
-                    <div class="apell">
-                        <label className="dash-label" for="Apellido">Apellidos</label><br />
-                        <input type="text" class="dash-input" placeholder="Vargas Pinzón" />
-                    </div>
-
-                    <div class="pais">
-                        <label className="dash-label" for="Pais">País de origen</label><br />
-                        <input type="text" class="dash-input" placeholder="Colombia" />
-                    </div>
-
-                    <div class="phone">
-                        <label className="dash-label" for="telefono">Teléfono de contacto</label><br />
-                        <input type="text" class="dash-input" placeholder="3135207460" />
-                    </div>
-
-                    <Link class="but-dash" href="">Acualizar</Link>
-
-                    <br /><br />
-
-                    <div class="password">
-                        <label className="dash-label" for="">Contraseña</label><br />
-                        <input type="password" />
-                    </div>
-
-                    <div class="confirmar">
-                        <label className="dash-label" for="">Confirmar contraseña</label><br />
-                        <input type="password" class="dash-input" />
-                    </div>
-
-                    <Link class="button2-dash" href="">Cambiar</Link>
-                   
-                   
                 </div>
 
-            </article>
-        </html>
+
+            </section>
+
+        </body>
+
     );
 
 

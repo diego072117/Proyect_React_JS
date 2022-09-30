@@ -1,9 +1,9 @@
-@media screen and (min-width: 320px) {
+
 
     .dash-nav{
             z-index: 1;
             position: absolute;
-            height: 76.9em;
+            height: 142.5%;
             left: 0;
             background: var(--azulnegro);
             width: 80px;
@@ -12,13 +12,14 @@
             box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
         }
     
-        .logo img {
+        .logo-dash img {
             width: 4rem;
-            margin-top: 14px;
+            margin-top: 30px;
             margin-left: -3.6em;
         }
     
-        .nav-title {
+        .nav-title-dash {
+            font-family: 'Playfair Display', serif;
             color: var(--blanco);
             font-size: 50px;
             margin-left: 15px;
@@ -32,9 +33,10 @@
             top: -15px;
             background-image: url(./Group\ 200.svg);
             background-size: cover;
+         
         }
     
-        .logo {
+        .logo-dash {
             position: relative;
             top: 10%;
             left: 20%;
@@ -46,11 +48,13 @@
             padding-top: 8px;
             left: 50px;
             font-size: 26px;
+            margin-top: -45px;
     
         }
     
         .gmail-user {
             font-size: 13px;
+          
         }
     
     
@@ -100,13 +104,12 @@
         }
     
         .dash-nav:hover {
-            width: 230px;
+            width: 280px;
             transition: all 0.5s ease;
         }
     
-        .logout {
+        .logout-dash {
             position: absolute;
             bottom: 0;
         }
 
-}

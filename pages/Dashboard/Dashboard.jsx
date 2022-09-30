@@ -10,7 +10,8 @@ function Dashboard() {
     return (
         <div className='container'>
             <NavDash/>
-            <FormDash/>
+            <FormDash 
+                NombreSesion='Bienvenido, Shirow'/>
 
         </div>
     );
