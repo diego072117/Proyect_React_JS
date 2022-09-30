@@ -5,7 +5,7 @@ import "./FormDash.css";
 
 
 
-function dashForm() {
+function dashForm({NombreSesion}) {
 
 
 
@@ -18,7 +18,7 @@ function dashForm() {
                 <div class="form-dashboard">
 
 
-                    <h2 class="titulo-dashboard">Bienvenido, Angie Vargas</h2>
+                    <h2 class="titulo-dashboard">{NombreSesion}</h2>
 
 
                     <div class="column-1-dashboard">
