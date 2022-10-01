@@ -5,12 +5,12 @@ import "./FormularioReg.css";
 
 
 
-function FormualrioRegis() {
+function FormualrioRegis({ TituloRegister }) {
     return (
         <body class="regis">
             <nav class="slider">
                 <img src={logo} alt="" />
-                <h1>Eres más que bienvenido</h1>
+                <h1>{TituloRegister}</h1>
             </nav>
             <div class="register">
 
@@ -63,9 +63,9 @@ function FormualrioRegis() {
                             <div>
                                 <label>Genero</label>
                                 <div class="genero">
-                                    <input type="radio" /><label>Mujer</label>
-                                    <input type="radio" /><label>Hombre</label>
-                                    <input type="radio" /><label>Otro</label>
+                                    <div className="gen"><input type="radio" /><label>Mujer</label></div>
+                                    <div className="gen"><input type="radio" /><label>Hombre</label></div>
+                                    <div className="gen"><input type="radio" /><label>Otro</label></div>
                                 </div>
                             </div>
                             <div>

@@ -5,7 +5,7 @@ import "./FormDash.css";
 
 
 
-function dashForm({NombreSesion}) {
+function dashForm({NombreSesion,CambioContraseña}) {
 
 
 
@@ -15,7 +15,7 @@ function dashForm({NombreSesion}) {
 
             <section class="formulario-dashboard">
 
-                <div class="form-dashboard">
+                <div class="form-dashboard"> 
 
 
                     <h2 class="titulo-dashboard">{NombreSesion}</h2>
@@ -31,7 +31,7 @@ function dashForm({NombreSesion}) {
                             <i class="fa-solid fa-download"></i>
                         </div>
 
-                        <a class="Update-password" href="">Cambiar cotraseña</a>
+                        <a class="Update-password" href="">{CambioContraseña}</a>
 
                     </div>
 
@@ -53,7 +53,7 @@ function dashForm({NombreSesion}) {
 
                         <div class="form-check-dashboard">
                             <h4>Género</h4>
-                            <div class="genero">
+                            <div class="genero-dash">
                                 <form class="checks-dashboard">
                                     <label className="label-dashboard" class="radio-inline-dashboard">
                                         <input type="radio" value="" name="genero" checked />Mujer

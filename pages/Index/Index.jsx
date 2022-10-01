@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../../components/nav/nav.js';
+import Nav from '../../components/nav/Nav.js';
 import Banner from '../../components/banner/Banner.js';
 import Descripcion from '../../components/descripcion/Descripcion.js';
 import Feature from '../../components/feature/Feature.js';
@@ -19,7 +19,7 @@ function Init() {
             <Descripcion />
             <Feature />
             <Ubicacion />
-            <Cards />
+            <Cards NombreUser='Angie Pinilla' />
             <Footer />
 
         </div>

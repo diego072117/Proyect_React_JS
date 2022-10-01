@@ -9,9 +9,12 @@ import "./dashboard.css";
 function Dashboard() {
     return (
         <div className='container'>
-            <NavDash/>
+            <NavDash
+                Nombre='Shirow'
+                CorreoSesion='Shirow@gmail.com'/>
             <FormDash 
-                NombreSesion='Bienvenido, Shirow'/>
+                NombreSesion='Bienvenido, Shirow'
+                CambioContraseña='Cambiar Contraseña'/>
 
         </div>
     );

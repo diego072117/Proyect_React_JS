@@ -4,7 +4,8 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        overflow-y: hidden;
+        height: fit-content;
+      
 
     }
 
@@ -15,7 +16,9 @@
         background-color: #3379b7ad;
         color: #fff;
         margin: 10%;
-        height: 500em;
+      
+        height: fit-content;
+        
     }
 
     /*IMAGEN*/
@@ -60,8 +63,8 @@
     
     
     
-        .formulario input,
-        label {
+        .formulario .login-input,
+        .login-label {
             display: flex;
             width: 100%;
             margin: 0px 0;
@@ -80,7 +83,7 @@
             display: flex;
         }
     
-        .formulario input {
+        .formulario .login-input {
             height: 20px;
             padding-top: 10px;
             border: 1px solid #fff;

@@ -4,7 +4,9 @@
     background: #33cc99;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    max-height: 700px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     overflow: hidden;
     
 }
