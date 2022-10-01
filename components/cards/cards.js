@@ -1,13 +1,13 @@
 // import logov from "./lala.jpeg";
 
 import "./cards.css";
-function cards(){
+function cards({NombreUser}){
     return(
 
       
         <section class="opinion">
             <div class="titulo">
-                <h1>Nuestros usuarios dicen...</h1>
+                <p>Nuestros usuarios dicen...</p>
             </div>
             <div class="opiniones">
         
@@ -17,7 +17,7 @@ function cards(){
                             <div></div>
                         </div>
                         <div class="user">
-                            <h3>Diego Rodriguez</h3>
+                            <h3>{NombreUser}</h3>
                             <div class="star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -38,7 +38,7 @@ function cards(){
                             <div></div>
                         </div>
                         <div class="user">
-                            <h3>Diana Garcia</h3>
+                            <h3>{NombreUser}</h3>
                             <div class="star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -59,7 +59,7 @@ function cards(){
                             <div></div>
                         </div>
                         <div class="user">
-                            <h3>Diego Rodriguez</h3>
+                            <h3>{NombreUser}</h3>
                             <div class="star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>

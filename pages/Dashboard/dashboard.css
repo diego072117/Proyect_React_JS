@@ -1,0 +1,131 @@
+@media only screen and (min-width: 1024px) {
+
+    /*NAV*/
+
+    .dash-nav {
+        height: 100%;
+
+    }
+
+
+    /*FORMULARIO*/
+
+    
+    .fondo-dashboard{
+        overflow: hidden;
+    }
+    .form-dashboard {
+        font-size: 23px;
+        display: grid;
+        grid-template:
+            "titulo titulo titulo" 10%
+            "column-1 column-2 column-3" 65%
+            "column-1 footer footer" 25%/
+            20% 40% 40%;
+    }
+
+    .imput-dashboard {
+        width: 100%;
+        padding: 5px 20px;
+        margin: 8px 0;
+        border-radius: 4px;
+        font-size: 20px;
+    }
+
+    .lala-dashboard {
+        width: 100%;
+
+    }
+
+    .download-dashboard {
+        width: 100%;
+        gap: 30px;
+    }
+
+    #icon-1-dashboard {
+        display: flex;
+    }
+
+    .radio-inline-dashboard{
+        flex-direction: row;
+    }
+
+    .checks-dashboard{
+        display: flex;
+        width: 10em;
+        margin-top: -10px;
+        
+    }
+
+    .form-check-dashboard{
+        height: 70px;
+        padding: 2px;
+    }
+
+    .titulo-dashboard {
+        grid-area: titulo;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .column-1-dashboard {
+        grid-area: column-1;
+        padding: 20px;
+    }
+
+    .column-2-dashboard {
+        grid-area: column-2;
+        padding: 15px;
+    }
+
+    .column-3-dashboard {
+        grid-area: column-3;
+        padding: 15px;
+    }
+
+    .footer-dashboard {
+        grid-area: footer;
+        padding: 20px;
+        margin-top: -60px;
+    }
+
+    .contraseñas-dashboard {
+        margin-top: -20px;
+        display: flex;
+        width: 100%;
+    }
+
+    .contraseña-dashboard {
+        width: 50%;
+        margin: 0px 20px 0px 0px;
+    }
+
+    .confirmar-dashboard {
+        width: 50%;
+    }
+
+    .button-dashboard {
+        width: 20%;
+        height: 45px;
+    }
+
+    .Update-password{
+        display: flex;
+        background: var(--azulnegro);
+        text-decoration: none;
+        border-radius: 5px;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        font-size: 25px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 50%;
+        
+        top: -11em; 
+       
+    }
+
+    
+
+}

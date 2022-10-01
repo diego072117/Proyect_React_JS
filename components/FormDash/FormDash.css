@@ -1,0 +1,104 @@
+
+    .fondo-dashboard{
+        font-family: 'Roboto', sans-serif;
+        background-image: url(../../pages/Dashboard/calle.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 80px;
+        height: 68em;
+        overflow: hidden;
+    }
+
+    .imput-dashboard{
+        width: 100%;
+        padding: 5px 3px;
+        margin: 5px 0;
+        border-radius: 4px; 
+        font-size: 15px;
+    }
+
+    .formulario-dashboard{
+        background-color: rgba(225, 228, 225, 0.86);
+        margin: 20px;
+        border-radius: 7px; 
+    }
+
+    .form-dashboard{
+        margin: 20px;
+        padding: 20px 0px;
+    }
+
+    .label-dashboard{
+        margin-top: 10px;
+    }
+
+    .titulo-dashboard{
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .download-dashboard{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 35px;
+        margin-top: 8px;
+        background: var(--azuloscuro);
+    }
+
+    #icon-1-dashboard{
+        display: none;
+    }
+
+    .download-dashboard i{
+ 
+        color: var(--blanco);
+        font-size: 25px;
+    }
+
+    .lala-dashboard{
+        display: flex;
+        margin: auto;
+        width: 130px;
+    }  
+
+    .radio-inline-dashboard{
+        flex-direction: column;
+    }
+    
+    .checks-dashboard{
+        display: flex;
+        gap: -3px;
+        margin-top: -10px;
+        
+    }
+
+    .form-check-dashboard{
+        height: 70px;
+        padding: 2px;
+    }
+
+    .button-dashboard {
+        margin-top: 20px;
+        width: 65%;
+        height: 30px;
+        background: var(--azulnegro);
+        color: #fff;
+        border-radius: 3px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button-dashboard:hover{
+        background: var(--azuloscuro);
+    }
+
+    .Update-password{
+        display: none;
+    }
+
+    .Update-password:hover{
+        background: var(--azuloscuro);
+    }

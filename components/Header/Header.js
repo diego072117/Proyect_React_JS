@@ -1,7 +1,7 @@
 
-
+import { Link } from "react-router-dom";
 import logo from "./Hotelia horizontal negro.svg";
-// import fondo from "./fondo.svg";
+import fondo from "./wave.svg";
 import "./Header.css";
 
 
@@ -12,13 +12,34 @@ function Header() {
 
             <div className="login">
 
-                {/* <div>
-                    <img class="svg" src={fondo} alt=""/>
-                </div> */}
+                <div className="cont">
+                    <img className="svg"  src={fondo} alt="" />
+                </div>
+        
+                <img className="img" src={logo} alt="" />
+                <i class="fa-solid fa-circle-user"></i>
 
+                <form class="formulario">
+                    <div>
+                        <label className="login-label" >Usuario</label>
+                        <input className="login-input" type="text" placeholder="correo@msg.com" />
+                    </div>
+                    <div>
+                        <label className="login-label" >Contraseña</label>
+                        <input className="login-input" type="password" placeholder="***" />
+                    </div>
+                    <div class="button">
+                        <Link to='/dashboard'> Ingresar</Link> 
 
-                <img src={logo} alt=""/>
-                    <i class="fa-solid fa-circle-user"></i>
+                    </div> 
+
+                    <label className="login-label"  class="link">¿No tiene una cuenta?
+                        
+                        <Link to='/register'> Registrate aqui</Link> 
+                    </label>
+
+                </form>
+                
             </div>
         </body>
     );
