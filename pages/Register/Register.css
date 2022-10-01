@@ -30,7 +30,7 @@ h5 {
     font-family: 'Marcellus', serif;
 }
 
-@media screen and (min-width: 320px) {
+
     .regis {
         background-image: url(./ciudad.jpg);
         background-size: cover;
@@ -38,7 +38,7 @@ h5 {
         display: flex;
         flex-direction: column;
     }
-}
+
 
 @media screen and (min-width: 1024px) {
     .regis {
@@ -55,7 +55,7 @@ h5 {
     .slider {
         display: flex;
         width: 45%;
-        height: 60.5em;
+        height: 70em;
         background: linear-gradient(49.54deg, rgba(69, 162, 243, 0.863) 2.89%, rgba(6, 55, 99, 0.89) 80.34%);
         align-items: center;
         justify-content: center;
@@ -68,10 +68,11 @@ h5 {
 
         width: 20rem;
         padding-top: 0%;
+        padding: 10%;
     }
 
     .slider h1 {
-        padding: 2em;
+        padding: 3%;
         font-size: 3em;
         text-align: center;
         margin-left: 0%;
@@ -141,8 +142,11 @@ h5 {
         display: flex;
         justify-content: flex-start;
         justify-items: center;
+        flex-wrap: wrap;
         margin: 1rem 0;
     }
+
+    
 
     .genero input {
         width: auto;
@@ -164,7 +168,7 @@ h5 {
 
     #archivo {
         color: var(--negro);
-        height: 1em;
+    
         width: 80%;
         background-color: var(--fondo);
         align-items: center;

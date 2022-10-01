@@ -16,8 +16,8 @@
         background-color: #3379b7ad;
         color: #fff;
         margin: 10%;
-        height: 26em;
-        /* height: fit-content; */
+      
+        height: fit-content;
         
     }
 
@@ -63,8 +63,8 @@
     
     
     
-        .formulario input,
-        label {
+        .formulario .login-input,
+        .login-label {
             display: flex;
             width: 100%;
             margin: 0px 0;
@@ -83,7 +83,7 @@
             display: flex;
         }
     
-        .formulario input {
+        .formulario .login-input {
             height: 20px;
             padding-top: 10px;
             border: 1px solid #fff;

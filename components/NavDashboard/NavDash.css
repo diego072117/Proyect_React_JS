@@ -2,7 +2,7 @@
 
     .dash-nav{
             z-index: 1;
-            position: absolute;
+            position: fixed;
             height: 142.5%;
             left: 0;
             background: var(--azulnegro);

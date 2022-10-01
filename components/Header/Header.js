@@ -21,19 +21,19 @@ function Header() {
 
                 <form class="formulario">
                     <div>
-                        <label>Usuario</label>
-                        <input type="text" placeholder="correo@msg.com" />
+                        <label className="login-label" >Usuario</label>
+                        <input className="login-input" type="text" placeholder="correo@msg.com" />
                     </div>
                     <div>
-                        <label>Contraseña</label>
-                        <input type="password" placeholder="***" />
+                        <label className="login-label" >Contraseña</label>
+                        <input className="login-input" type="password" placeholder="***" />
                     </div>
                     <div class="button">
                         <Link to='/dashboard'> Ingresar</Link> 
 
                     </div> 
 
-                    <label class="link">¿No tiene una cuenta?
+                    <label className="login-label"  class="link">¿No tiene una cuenta?
                         
                         <Link to='/register'> Registrate aqui</Link> 
                     </label>

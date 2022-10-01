@@ -1,11 +1,11 @@
-@media screen and (min-width: 320px) {
+
 
 .register {
     background-color: rgba(255, 255, 255, 0.767);
     margin: 1em;
     padding: 1em;
-    width: 80%;
-    font-size: 1.2em;
+
+    font-size: 1.2em; 
     border-radius: 5px; 
 }
 
@@ -87,6 +87,7 @@ form .formulario {
     display: flex;
     justify-content: flex-start;
     justify-items: center;
+    flex-wrap: wrap;
     margin: 1rem 0;
 }
 
@@ -101,6 +102,9 @@ form .formulario {
     margin-right: 1rem;
 }
 
+.gen{
+    display: flex;
+}
 .foto {
     display: flex;
     flex-direction: column;
@@ -110,7 +114,7 @@ form .formulario {
 
 #archivo {
     color: var(--negro);
-    height: 1em;
+    
     width: 80%;
     background-color: var(--fondo);
     align-items: center;
@@ -249,4 +253,3 @@ form .formulario {
     text-align: center;
 }
 
-}

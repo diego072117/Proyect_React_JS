@@ -15,7 +15,7 @@ function dashForm({NombreSesion,CambioContraseña}) {
 
             <section class="formulario-dashboard">
 
-                <div class="form-dashboard">
+                <div class="form-dashboard"> 
 
 
                     <h2 class="titulo-dashboard">{NombreSesion}</h2>
@@ -53,7 +53,7 @@ function dashForm({NombreSesion,CambioContraseña}) {
 
                         <div class="form-check-dashboard">
                             <h4>Género</h4>
-                            <div class="genero">
+                            <div class="genero-dash">
                                 <form class="checks-dashboard">
                                     <label className="label-dashboard" class="radio-inline-dashboard">
                                         <input type="radio" value="" name="genero" checked />Mujer
