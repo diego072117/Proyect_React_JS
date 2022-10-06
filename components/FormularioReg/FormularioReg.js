@@ -12,7 +12,7 @@ function FormualrioRegis({ TituloRegister }) {
                 <img src={logo} alt="" />
                 <h1>{TituloRegister}</h1>
             </nav>
-            <div class="register">
+            <div class="register"> 
 
                 <div class="registrate">
                     <h1>Registrate</h1>
@@ -74,7 +74,7 @@ function FormualrioRegis({ TituloRegister }) {
                             </div>
                             <div class="foto">
                                 <label>Foto</label>
-                                <input type="file" id="archivo" />
+                                <input type="file" id="archivo" /> 
                                 <label for="archivo" id="archivo">Selecionar Archivo</label>
                             </div>
                             <div>

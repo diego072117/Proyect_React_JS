@@ -1,21 +1,49 @@
 import { Link } from "react-router-dom";
 import lala from "../cards/lala.jpeg";
-
+import axios from 'axios';
+import { useEffect, useState } from "react";
+//npm install axion
 import "./FormDash.css";
 
+/*
+{
+const url="";
 
+const getData=async()=>{
+    const response=axios.get(url);
+    return response;
+}
+
+
+const [list, setlist]=useState([]);
+
+useEffect(()=>{
+    getData().then(cd (response)=>{
+        setList(response.data);
+    })
+}),[])
+
+}
+
+
+
+------------------------
+
+{list.map((us,index)=>(
+        <tr>
+        <td>{us.id}</td>
+        </tr>
+    ))}
+ */
 
 function dashForm({NombreSesion,CambioContraseña}) {
-
-
-
     return (
 
         <body className="fondo-dashboard">
 
             <section class="formulario-dashboard">
 
-                <div class="form-dashboard"> 
+                <div class="form-dashboard">  
 
 
                     <h2 class="titulo-dashboard">{NombreSesion}</h2>
@@ -51,28 +79,20 @@ function dashForm({NombreSesion,CambioContraseña}) {
                             <input type="date" class="form-control imput-dashboard" placeholder="10/08/1976" />
                         </div>
 
-                        <div class="form-check-dashboard">
-                            <h4>Género</h4>
-                            <div class="genero-dash">
-                                <form class="checks-dashboard">
-                                    <label className="label-dashboard" class="radio-inline-dashboard">
-                                        <input type="radio" value="" name="genero" checked />Mujer
-                                    </label>
-                                    <label className="label-dashboard" class="radio-inline-dashboard">
-                                        <input type="radio" value="" name="genero" />Hombre
-                                    </label>
-                                    <label className="label-dashboard" class="radio-inline-dashboard">
-                                        <input type="radio" value="" name="genero" />Otro
-                                    </label>
-                                </form>
+                        <div>
+                                <label>Genero</label>
+                                <div class="genero">
+                                    <div className="gen"><input type="radio" checked /><label>Mujer</label></div>
+                                    <div className="gen"><input type="radio" /><label>Hombre</label></div>
+                                    <div className="gen"><input type="radio" /><label>Otro</label></div>
+                                </div>
                             </div>
-                        </div>
 
                         <div class="form-group">
                             <label className="label-dashboard" for="email">Email</label>
                             <input type="email" class="form-control imput-dashboard" placeholder="angievargas2@gmail.com" />
                         </div>
-
+ 
                     </div>
 
                     <div class="column-3-dashboard">
