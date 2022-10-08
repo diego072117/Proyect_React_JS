@@ -1,42 +1,20 @@
 import { Link } from "react-router-dom";
 import lala from "../cards/lala.jpeg";
-import axios from 'axios';
-import { useEffect, useState } from "react";
+
+
+
 //npm install axion
 import "./FormDash.css";
 
-/*
-{
-const url="";
-
-const getData=async()=>{
-    const response=axios.get(url);
-    return response;
-}
 
 
-const [list, setlist]=useState([]);
+function DashForm({NombreSesion,CambioContraseña}) {
 
-useEffect(()=>{
-    getData().then(cd (response)=>{
-        setList(response.data);
-    })
-}),[])
 
-}
+   
 
 
 
-------------------------
-
-{list.map((us,index)=>(
-        <tr>
-        <td>{us.id}</td>
-        </tr>
-    ))}
- */
-
-function dashForm({NombreSesion,CambioContraseña}) {
     return (
 
         <body className="fondo-dashboard">
@@ -59,7 +37,7 @@ function dashForm({NombreSesion,CambioContraseña}) {
                             <i class="fa-solid fa-download"></i>
                         </div>
 
-                        <a class="Update-password" href="">{CambioContraseña}</a>
+                        <Link class="Update-password" href="">{CambioContraseña}</Link>
 
                     </div>
 
@@ -149,4 +127,4 @@ function dashForm({NombreSesion,CambioContraseña}) {
 }
 
 
-export default dashForm;
+export default DashForm;

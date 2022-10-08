@@ -1,14 +1,11 @@
-
-// import React, { useState } from 'react'
 import logoDash from "./hotelia campana.svg";
 import lala from "../cards/lala.jpeg";
-
-import "./NavDash.css";
+import "../NavDashboard/NavDash.css";
 import { Link } from "react-router-dom";
 
 
 
-function NavDash({Nombre,CorreoSesion}) {
+function NavUsers({Nombre,CorreoSesion}) {
 
 
 
@@ -33,28 +30,12 @@ function NavDash({Nombre,CorreoSesion}) {
 
 
                 </li>
-                <li><Link className="dash-a">
-                    <i class="fas fa-solid fa-bed icon"></i>
-                    <span class="nav-item">Habitaciones</span>
+                <li><Link to='/Dashboard' className="dash-a">
+                    <i class="fas fa-brands fa-teamspeak icon"></i>
+                    <span class="nav-item">Dashboard</span>
                 </Link>
                 </li>
-                <li><Link className="dash-a">
-                    <i class="fas fa-solid fa-bell-concierge icon"></i>
-                    <span class="nav-item">Reservas</span>
-                </Link></li>
-                <li><Link className="dash-a">
-                    <i class="fas fa-solid fa-bed icon"></i>
-                    <span class="nav-item">Habitaciones</span>
-                </Link></li>
-                <li><Link className="dash-a">
-                    <i class=" fas fa-solid fa-bell-concierge icon"></i>
-                    <span class="nav-item">Habitaciones</span>
-                </Link></li>
-
-                <li><Link to='/Users' className="dash-a">
-                    <i class=" fas fa-solid fa-user icon"></i>
-                    <span class="nav-item">Usuarios</span>
-                </Link></li>
+             
 
                 <li><Link to='/' class="logout-dash dash-a">
                     <i class=" fas fa-solid fa-arrow-right-from-bracket icon"></i>
@@ -69,4 +50,4 @@ function NavDash({Nombre,CorreoSesion}) {
 }
 
 
-export default NavDash;
+export default NavUsers;

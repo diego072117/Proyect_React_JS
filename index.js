@@ -17,6 +17,8 @@ import Init from "./pages/Index/Index";
 import Register from "./pages/Register/Register.jsx";
 import Error from "./pages/Error404/Error404.jsx";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import Users from "./pages/Users/Users";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,6 +32,7 @@ root.render(
     <Route path='/login' element={<Login/>} />
       <Route path='/register' element={<Register />} />
       <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/Users' element={<Users/>} />
       <Route path='*' element={<Error />} />
   </Routes>
 
