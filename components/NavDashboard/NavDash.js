@@ -1,6 +1,5 @@
 
 // import React, { useState } from 'react'
-//import { Link } from "react-router-dom";
 import logoDash from "./hotelia campana.svg";
 import lala from "../cards/lala.jpeg";
 
@@ -50,6 +49,11 @@ function NavDash({Nombre,CorreoSesion}) {
                 <li><Link className="dash-a">
                     <i class=" fas fa-solid fa-bell-concierge icon"></i>
                     <span class="nav-item">Habitaciones</span>
+                </Link></li>
+
+                <li><Link to='/users' className="dash-a">
+                    <i class=" fas fa-solid fa-user icon"></i>
+                    <span class="nav-item">Usuarios</span>
                 </Link></li>
 
                 <li><Link to='/' class="logout-dash dash-a">

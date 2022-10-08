@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import lala from "../cards/lala.jpeg";
 
+
+
+//npm install axion
 import "./FormDash.css";
 
 
 
-function dashForm({NombreSesion,CambioContraseña}) {
+function DashForm({NombreSesion,CambioContraseña}) {
+
+
+   
 
 
 
@@ -15,7 +21,7 @@ function dashForm({NombreSesion,CambioContraseña}) {
 
             <section class="formulario-dashboard">
 
-                <div class="form-dashboard"> 
+                <div class="form-dashboard">  
 
 
                     <h2 class="titulo-dashboard">{NombreSesion}</h2>
@@ -31,7 +37,7 @@ function dashForm({NombreSesion,CambioContraseña}) {
                             <i class="fa-solid fa-download"></i>
                         </div>
 
-                        <a class="Update-password" href="">{CambioContraseña}</a>
+                        <Link class="Update-password" href="">{CambioContraseña}</Link>
 
                     </div>
 
@@ -51,28 +57,20 @@ function dashForm({NombreSesion,CambioContraseña}) {
                             <input type="date" class="form-control imput-dashboard" placeholder="10/08/1976" />
                         </div>
 
-                        <div class="form-check-dashboard">
-                            <h4>Género</h4>
-                            <div class="genero-dash">
-                                <form class="checks-dashboard">
-                                    <label className="label-dashboard" class="radio-inline-dashboard">
-                                        <input type="radio" value="" name="genero" checked />Mujer
-                                    </label>
-                                    <label className="label-dashboard" class="radio-inline-dashboard">
-                                        <input type="radio" value="" name="genero" />Hombre
-                                    </label>
-                                    <label className="label-dashboard" class="radio-inline-dashboard">
-                                        <input type="radio" value="" name="genero" />Otro
-                                    </label>
-                                </form>
+                        <div>
+                                <label>Genero</label>
+                                <div class="genero">
+                                    <div className="gen"><input type="radio" checked /><label>Mujer</label></div>
+                                    <div className="gen"><input type="radio" /><label>Hombre</label></div>
+                                    <div className="gen"><input type="radio" /><label>Otro</label></div>
+                                </div>
                             </div>
-                        </div>
 
                         <div class="form-group">
                             <label className="label-dashboard" for="email">Email</label>
                             <input type="email" class="form-control imput-dashboard" placeholder="angievargas2@gmail.com" />
                         </div>
-
+ 
                     </div>
 
                     <div class="column-3-dashboard">
@@ -129,4 +127,4 @@ function dashForm({NombreSesion,CambioContraseña}) {
 }
 
 
-export default dashForm;
+export default DashForm;

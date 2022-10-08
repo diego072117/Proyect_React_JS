@@ -21,6 +21,8 @@
         background-color: rgba(225, 228, 225, 0.86);
         margin: 20px;
         border-radius: 7px; 
+        /* height: inherit; */
+        padding-bottom: 2em;
     }
 
     .form-dashboard{

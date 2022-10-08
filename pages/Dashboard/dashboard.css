@@ -120,8 +120,8 @@
         font-size: 25px;
         margin: 4px 2px;
         cursor: pointer;
-        width: 50%;
-        
+        justify-content: center;
+        padding: inherit;
         top: -11em; 
        
     }
