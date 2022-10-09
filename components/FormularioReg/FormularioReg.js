@@ -1,4 +1,4 @@
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "./Hotelia horizontal blanco.svg";
 import axios from "axios";
 import { useState } from "react";
@@ -12,7 +12,7 @@ function FormualrioRegis({ TituloRegister }) {
 
     // const history=useHistory();
     /*1.Inicializamos los inputs en el estado, para poder recibir los valores que se digiten 
-    en él y controlarlos */
+    en él y controlarlos */ 
     const [data, setData] = useState({
         _id: "", tipodoc: "", nombre: "", apellido: "", fnacimiento: "",
         genero: "", email: "", telefono: "", paisorigen: "", password: "", tipouser: "Huesped", img: ""
@@ -73,7 +73,7 @@ function FormualrioRegis({ TituloRegister }) {
                 <form onSubmit={handleSubmit} action="" method="post">
                     <div class="formulario">
                         <div class="columna">
-                            <div>
+                            <div className="grp-from">
                                 <label for="tipo">Tipo de documento</label>
                                 <select name="tipodoc" value={data.tipodoc}
                                     onChange={handleChange}>
@@ -82,40 +82,40 @@ function FormualrioRegis({ TituloRegister }) {
                                     <option value="Cedula de ciudadania" >Cedula de ciudadania</option>
                                 </select>
                             </div>
-                            <div>
+                            <div className="grp-from">
                                 <label for="nombre">Nombre</label>
                                 <input type="text" name="nombre" id="nombre" value={data.nombre}
                                     onChange={handleChange} />
                             </div>
-                            <div>
+                            <div className="grp-from">
                                 <label for="fecha">Fecha de nacimiento</label>
                                 <input type="date" name="fnacimiento" value={data.fnacimiento}
                                     onChange={handleChange} />
                             </div>
 
-                            <div>
+                            <div className="grp-from">
                                 <label for="email">Email</label>
                                 <input type="email" placeholder="e-mail" name="email" value={data.email}
                                     onChange={handleChange} />
                             </div>
-                            <div>
+                            <div className="grp-from">
                                 <label for="pais">Pais de origen</label>
                                 <input type="text" name="paisorigen" value={data.paisorigen}
                                     onChange={handleChange} />
                             </div>
-                            <div>
+                            <div className="grp-from">
                                 <label>Contraseña</label>
                                 <input type="password" name="password" value={data.password}
                                     onChange={handleChange} />
                             </div>
                         </div>
                         <div class="columna">
-                            <div>
+                            <div className="grp-from">
                                 <label for="doc">Numero de documento</label>
                                 <input type="number" name="_id" value={data._id}
                                     onChange={handleChange} />
                             </div>
-                            <div>
+                            <div className="grp-from">
                                 <label for="apellido">Apellido</label>
                                 <input type="text" name="apellido" value={data.apellido}
                                     onChange={handleChange} />
@@ -133,7 +133,7 @@ function FormualrioRegis({ TituloRegister }) {
                                 </div>
                             </div> */}
 
-                            <div>
+                            <div className="grp-from">
                                 <label for="genero">Genero</label>
                                 <select name="genero" value={data.genero}
                                     onChange={handleChange}>
@@ -145,7 +145,7 @@ function FormualrioRegis({ TituloRegister }) {
                                 </select>
                             </div>
 
-                            <div>
+                            <div className="grp-from">
                                 <label for="telefono">Telefono</label>
                                 <input type="number" name="telefono" value={data.telefono}
                                     onChange={handleChange} />
@@ -156,7 +156,7 @@ function FormualrioRegis({ TituloRegister }) {
                                     onChange={handleChange} />
                                 <label for="archivo" id="archivo">Selecionar Archivo</label>
                             </div>
-                            <div>
+                            <div className="grp-from">
                                 <label>Confirmar contraseña</label>
                                 <input type="password" />
                             </div>
@@ -168,7 +168,7 @@ function FormualrioRegis({ TituloRegister }) {
 
                     <div class="boton">
                         <input type='submit'></input>
-                        {/* <Link to='/login'> Ingresar</Link> */}
+                        <Link className="volver-btn" to='/login'> Regresar</Link> 
                     </div>
 
 

@@ -52,10 +52,12 @@ function TableUsers() {
 
         <body className="fondo-dashboard">
 
-            <input value={search} onChange={searcher} type="text" placeholder='Search' />
 
             <div id="container-table-users">
-
+                <div className="buscar-user">
+                    <label className="label-buscar">Buscar Usuario</label>
+                    <input className="input-buscar" value={search} onChange={searcher} type="text" placeholder='Search' />
+                </div>
                 <table className="table-users">
                     <thead className="thead-users">
                         <tr>

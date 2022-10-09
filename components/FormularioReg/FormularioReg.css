@@ -1,18 +1,16 @@
-
-
 .register {
     background-color: rgba(255, 255, 255, 0.767);
     margin: 1em;
     padding: 1em;
 
-    font-size: 1.2em; 
-    border-radius: 5px; 
+    font-size: 1.2em;
+    border-radius: 5px;
 }
 
 /*BARRA DE NAVEGACION*/
 .slider {
     display: flex;
-   
+
     height: 100%;
     flex-direction: column;
     background: linear-gradient(49.54deg, rgba(69, 162, 243, 0.863) 2.89%, rgba(6, 55, 99, 0.89) 80.34%);
@@ -74,6 +72,11 @@ form .formulario {
     border: 0;
 }
 
+.grp-from{
+    display: flex;
+    flex-direction: column;
+}
+
 .columna select {
     width: 90%;
     padding: 0.5em;
@@ -102,9 +105,10 @@ form .formulario {
     margin-right: 1rem;
 }
 
-.gen{
+.gen {
     display: flex;
 }
+
 .foto {
     display: flex;
     flex-direction: column;
@@ -114,7 +118,7 @@ form .formulario {
 
 #archivo {
     color: var(--negro);
-    
+
     width: 80%;
     background-color: var(--fondo);
     align-items: center;
@@ -138,7 +142,7 @@ form .formulario {
     margin-top: 2rem;
 }
 
-.boton a {
+.boton input {
     width: 45%;
     color: var(--blanco);
     background-color: var(--negro2);
@@ -150,6 +154,16 @@ form .formulario {
     text-decoration: none;
     text-align: center;
 
+}
+
+.boton .volver-btn {
+    width: 45%;
+    color: var(--azuloscuro);
+    padding: 1em;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-align: center;
 }
 
 /*MODAL*/
@@ -252,4 +266,3 @@ form .formulario {
 .lbl-modal {
     text-align: center;
 }
-

@@ -1,0 +1,21 @@
+@media screen and (min-width: 1024px) {
+
+#container-table-users {
+        display: flex;
+        justify-content: center;
+        margin: 5em;
+        flex-direction: column;
+
+    }
+
+    .table-users {
+        background-color: rgba(255, 255, 255, 0.747);
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 15px;
+        font-size: 15px;
+
+    }
+
+}

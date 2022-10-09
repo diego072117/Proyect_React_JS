@@ -193,7 +193,7 @@ h5 {
         margin-top: 1em;
     }
 
-    .boton a {
+    .boton input {
         width: 30%;
         color: var(--blanco);
         background-color: var(--negro2);
