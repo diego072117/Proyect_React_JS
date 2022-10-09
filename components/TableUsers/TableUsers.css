@@ -28,7 +28,7 @@ tr:nth-child(even){
 	background-color: #ddd;
 }
 
-/* tr:hover td{
-	background-color: var(--verdeazul);
+tr:hover td{
+	background-color: #6697c2;
 	color: white;
-} */
+}
