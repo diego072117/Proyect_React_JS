@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import lala from "../cards/lala.jpeg";
 
@@ -11,9 +12,9 @@ import "./FormDash.css";
 function DashForm({NombreSesion,CambioContraseña}) {
 
 
-   
-
-
+    
+    // const locals = JSON.parse(localStorage.getItem("actualUser"));
+    // console.log(locals);
 
     return (
 
@@ -21,7 +22,7 @@ function DashForm({NombreSesion,CambioContraseña}) {
 
             <section class="formulario-dashboard">
 
-                <div class="form-dashboard">  
+                <form class="form-dashboard">  
 
 
                     <h2 class="titulo-dashboard">{NombreSesion}</h2>
@@ -114,7 +115,7 @@ function DashForm({NombreSesion,CambioContraseña}) {
                         <button class="button-dashboard">Cambiar</button>
 
                     </div>
-                </div>
+                </form>
 
 
             </section>

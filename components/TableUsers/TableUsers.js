@@ -1,11 +1,14 @@
 import React from "react";
 import "./TableUsers.css";
-
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useEffect, useState } from "react";
 
 
+
+
 function TableUsers() {
+
 
     const url = "https://hoteliakuepa.herokuapp.com/users";
 
@@ -46,7 +49,11 @@ function TableUsers() {
         })
     }, []);
 
-
+  
+    const setID = (_id) => {
+        console.log(_id);
+        localStorage.setItem('ID', _id);
+    }
 
     return (
 
@@ -68,11 +75,12 @@ function TableUsers() {
                             <th className="th-users">Fecha nacimiento</th>
                             <th className="th-users">Genero</th>
                             <th className="th-users">Email</th>
-                            <th className="th-users">telefono</th>
+                            <th className="th-users">Telefono</th>
                             <th className="th-users">Pais</th>
                             <th className="th-users">password</th>
                             <th className="th-users">Rol</th>
-                            <th className="th-users">img</th>
+                            <th className="th-users">Img</th>
+                            <th className="th-users">Acciones</th>
 
                         </tr>
                     </thead>
@@ -91,13 +99,22 @@ function TableUsers() {
                                 <td className="td-users">{list.password}</td>
                                 <td className="td-users">{list.tipouser}</td>
                                 <td className="td-users">{list.img}</td>
+                                <td className="td-users">
+                                    <Link to='/dashboard'>
+                                    <button onClick={ () => setID(list._id) } >Editar</button>
+                                    </Link>
+                                </td>
+
 
                             </tr>
                         ))}
                     </tbody>
-
                 </table>
+
+                
+
             </div>
+
 
         </body>
 
