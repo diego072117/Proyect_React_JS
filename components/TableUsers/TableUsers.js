@@ -1,9 +1,11 @@
 import React from "react";
 import "./TableUsers.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useEffect, useState } from "react";
 
+
+// import { Container, Form, Modal, Row } from 'react-bootstrap';
 
 
 
@@ -13,7 +15,12 @@ function TableUsers() {
     const url = "https://hoteliakuepa.herokuapp.com/users";
 
     const [list, setList] = useState([]);
+    // const [list] = useState([]); 
     const [search, setSearch] = useState("")
+    const [openModal, setOpenModal] = useState(false)
+    const [dataModal, setDataModal] = useState({})
+
+    // const [upList,setUplist]=useState([false]);
 
     const getData = async () => {
         const response = axios.get(url);
@@ -49,20 +56,57 @@ function TableUsers() {
         })
     }, []);
 
-  
-    const setID = (_id) => {
-        console.log(_id);
-        localStorage.setItem('ID', _id);
+
+    // const setID = (_id) => {
+    //     console.log(_id);
+    //     localStorage.setItem('ID', _id);
+    // }
+
+
+
+
+
+
+    function openClose() {
+         setDataModal(list);
+        if (openModal === false) {
+
+           
+            setOpenModal(true)
+
+        } else if (openModal === true) {
+
+            setOpenModal(false)
+
+        }
+
     }
+
+   
+    
+
+    const handleChangeModal=({target})=>{
+        setDataModal({
+            ...dataModal,
+            [target.name]: target.value
+        })
+    }
+
+
+
+    console.log(dataModal)
 
     return (
 
-        <body className="fondo-dashboard">
+
+        <div className="fondo-dashboard">
+
+
 
 
             <div id="container-table-users">
                 <div className="buscar-user">
-                    <label className="label-buscar">Buscar Usuario</label>
+                    <label className="label-buscar">Buscar list</label>
                     <input className="input-buscar" value={search} onChange={searcher} type="text" placeholder='Search' />
                 </div>
                 <table className="table-users">
@@ -86,7 +130,7 @@ function TableUsers() {
                     </thead>
                     <tbody>
                         {results.map((list, index) => (
-                            <tr>
+                            <tr key={list._id}>
                                 <td className="td-users">{list._id}</td>
                                 <td className="td-users">{list.tipodoc}</td>
                                 <td className="td-users">{list.nombre}</td>
@@ -99,10 +143,10 @@ function TableUsers() {
                                 <td className="td-users">{list.password}</td>
                                 <td className="td-users">{list.tipouser}</td>
                                 <td className="td-users">{list.img}</td>
-                                <td className="td-users">
-                                    <Link to='/dashboard'>
-                                    <button onClick={ () => setID(list._id) } >Editar</button>
-                                    </Link>
+                                <td className="td-users-edit">
+                                    <i class="fa-solid fa-user-pen edit" onClick={() => { openClose() }}></i>
+                                    {/* <button onClick={() => setID(list._id)} >Editar</button> */}
+
                                 </td>
 
 
@@ -111,12 +155,46 @@ function TableUsers() {
                     </tbody>
                 </table>
 
-                
+
+
 
             </div>
 
 
-        </body>
+            <div className={openModal ? 'modal1 abrir' : openModal === false ? 'modal1 cerrar' : 'modal1'}>
+   
+                  <form class="contenidoModal">
+
+                        <span class="cerrarModal"><i class="fa-solid fa-xmark" onClick={() => { openClose() }}></i></span>
+                        <h2>Usuarios</h2>
+                        <label>ID</label><br />
+                        <input  type="number" value={dataModal._id}
+                        onChange={handleChangeModal} /><br />
+                        <label>Nombre</label><br />
+                        <input  type="text" value={dataModal.nombre}
+                        onChange={handleChangeModal}/><br />
+                        <label>Apellido</label><br />
+                        <input  type="text" /><br />
+                        <label>email</label><br />
+                        <input  type="email" /><br />
+                        <label>Telefono</label><br />
+                        <input  type="number" /><br />
+                        <label>Pais</label><br />
+                        <input  type="text" /><br />
+
+
+                      
+                        <button class="btn">Guardar cambios</button>
+
+
+                </form>
+            </div>
+
+
+
+
+
+        </div>
 
     );
 }

@@ -51,7 +51,7 @@ function NavDash({Nombre,CorreoSesion}) {
                     <span class="nav-item">Habitaciones</span>
                 </Link></li>
 
-                <li><Link to='/Users' className="dash-a">
+                <li><Link to='/users' className="dash-a">
                     <i class=" fas fa-solid fa-user icon"></i>
                     <span class="nav-item">Usuarios</span>
                 </Link></li>

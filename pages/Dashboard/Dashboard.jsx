@@ -8,7 +8,7 @@ import "./dashboard.css";
 
 function Dashboard() {
     return (
-        <div className='container'>
+        <div className='container-dashboard'>
             <NavDash
                 Nombre='Shirow'
                 CorreoSesion='Shirow@gmail.com'/>

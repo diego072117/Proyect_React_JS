@@ -9,7 +9,7 @@ import "./Users.css";
 
 function Users() {
     return (
-        <div className='container'>
+        <div className='container-users'>
             <NavUsers
                 Nombre='Shirow'
                 CorreoSesion='Shirow@gmail.com'/>

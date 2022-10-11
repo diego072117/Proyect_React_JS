@@ -12,7 +12,7 @@ import '../Index/index.css'
 
 function Init() {
     return (
-        <div className="container">
+        <div className="container-index">
 
             <Nav />
             <Banner />

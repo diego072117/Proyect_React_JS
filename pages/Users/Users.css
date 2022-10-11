@@ -1,6 +1,6 @@
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
-#container-table-users {
+/* #container-table-users {
         display: flex;
         justify-content: center;
         margin: 5em;
@@ -16,6 +16,95 @@
         margin-top: 15px;
         font-size: 15px;
 
-    }
+    } */
 
-} */
+
+
+    /* MODALSSSSSS */
+
+  
+
+ .modal1{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+	height: 100%;
+    position: relative;
+    margin-top: -15em;
+    overflow: auto;
+    text-align: center;
+    transition: transform .6s ease;
+ }
+
+ .contenidoModal{
+	background-color: #FFFFFF;
+	width: 25%;
+	height: 50%;
+    top: 14%;
+	border-radius: 10px;
+	margin: auto;
+	position: relative;
+	padding: 1rem;
+	animation-name: animarmodal;
+	animation-duration: 0.5s;
+ }
+ 
+ .contenidoModal label{
+	font-size: 15px;
+ }
+ 
+ .contenidoModal input {
+	width: 60%;
+	background-color: #c2c3c5;
+	outline: none;
+	border: none;
+	padding: 10px;
+	margin-top: 2%;
+	padding-left: 40px;
+	border-radius: 15px;
+ }
+ 
+ @keyframes animarmodal {
+	from {top: -300px; opacity: 0;}
+	to{top: 0; opacity: 1;}
+ }
+ .cerrarModal{
+	cursor: pointer;
+	font-size: 2rem;
+	float: right;  
+ }
+ 
+ 
+ 
+ 
+ 
+ .cerrarModal:hover{
+	cursor: pointer;
+ }
+ 
+ .contenidoModal h2{
+	
+	background-color: blueviolet;
+	color: #FFFFFF;
+	width: 70%;
+	padding: 1rem 0;
+	margin-left: 70px;
+	border-radius: 10px;
+	
+ }
+
+
+ .btn{
+    cursor: pointer;
+ }
+
+ 
+ .cerrar {
+	transform: translateY(-1000em);
+}
+
+.abrir {
+	transform: translateY(-335.5em);
+}
+   
+
+}

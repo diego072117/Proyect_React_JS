@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom/client';
 // import Cards from './components/cards/cards';
 // import Footer from './components/footer/footer';
 import './index.css';
+
  
 
 import {BrowserRouter, Route , Routes} from 'react-router-dom'
@@ -32,7 +33,7 @@ root.render(
     <Route path='/login' element={<Login/>} />
       <Route path='/register' element={<Register />} />
       <Route path='/dashboard' element={<Dashboard />} />
-      <Route path='/Users' element={<Users/>} />
+      <Route path='/users' element={<Users/>} />
       <Route path='*' element={<Error />} />
   </Routes>
 
