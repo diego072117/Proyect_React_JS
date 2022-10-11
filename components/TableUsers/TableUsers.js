@@ -1,6 +1,5 @@
 import React from "react";
 import "./TableUsers.css";
-import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useEffect, useState } from "react";
 
@@ -12,13 +11,13 @@ import { useEffect, useState } from "react";
 function TableUsers() {
 
 
-    const url = "https://hoteliakuepa.herokuapp.com/users";
+    const url = "https://hoteliakuepa.herokuapp.com/users/";
 
     const [list, setList] = useState([]);
     // const [list] = useState([]); 
     const [search, setSearch] = useState("")
     const [openModal, setOpenModal] = useState(false)
-    const [dataModal, setDataModal] = useState({})
+    const [dataUser, setDataUser] = useState(null)
 
     // const [upList,setUplist]=useState([false]);
 
@@ -63,16 +62,28 @@ function TableUsers() {
     // }
 
 
+async function getUserById(id){
+
+    const response = await fetch(url + id)
+         
+
+    const data = await response.json();
+
+    setDataUser(data);
+
+}
 
 
 
+    async function openClose(id) { 
 
-    function openClose() {
-         setDataModal(list);
+         await getUserById(id);
+
         if (openModal === false) {
 
            
             setOpenModal(true)
+            console.log(dataUser)
 
         } else if (openModal === true) {
 
@@ -80,21 +91,15 @@ function TableUsers() {
 
         }
 
-    }
 
-   
-    
-
-    const handleChangeModal=({target})=>{
-        setDataModal({
-            ...dataModal,
-            [target.name]: target.value
-        })
     }
 
 
+    function handleChange(e){
 
-    console.log(dataModal)
+    }
+
+
 
     return (
 
@@ -144,7 +149,7 @@ function TableUsers() {
                                 <td className="td-users">{list.tipouser}</td>
                                 <td className="td-users">{list.img}</td>
                                 <td className="td-users-edit">
-                                    <i class="fa-solid fa-user-pen edit" onClick={() => { openClose() }}></i>
+                                    <i class="fa-solid fa-user-pen edit" onClick={() => { openClose(list._id) }}></i>
                                     {/* <button onClick={() => setID(list._id)} >Editar</button> */}
 
                                 </td>
@@ -163,24 +168,24 @@ function TableUsers() {
 
             <div className={openModal ? 'modal1 abrir' : openModal === false ? 'modal1 cerrar' : 'modal1'}>
    
+                { dataUser != null ? (
+
                   <form class="contenidoModal">
 
                         <span class="cerrarModal"><i class="fa-solid fa-xmark" onClick={() => { openClose() }}></i></span>
                         <h2>Usuarios</h2>
                         <label>ID</label><br />
-                        <input  type="number" value={dataModal._id}
-                        onChange={handleChangeModal} /><br />
+                        <input  type="number" value={dataUser._id}/><br />
                         <label>Nombre</label><br />
-                        <input  type="text" value={dataModal.nombre}
-                        onChange={handleChangeModal}/><br />
+                        <input  type="text" value={dataUser.nombre}/><br />
                         <label>Apellido</label><br />
-                        <input  type="text" /><br />
+                        <input  type="text" value={dataUser.apellido}/><br />
                         <label>email</label><br />
-                        <input  type="email" /><br />
+                        <input  type="email" value={dataUser.email}/><br />
                         <label>Telefono</label><br />
-                        <input  type="number" /><br />
+                        <input  type="number" value={dataUser.telefono}/><br />
                         <label>Pais</label><br />
-                        <input  type="text" /><br />
+                        <input  type="text" value={dataUser.paisorigen}/><br />
 
 
                       
@@ -188,6 +193,8 @@ function TableUsers() {
 
 
                 </form>
+
+):(<div>ci</div>)}      
             </div>
 
 
