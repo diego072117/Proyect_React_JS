@@ -2,7 +2,7 @@ import React from "react";
 import "./TableUsers.css";
 import axios from 'axios';
 import { useEffect, useState } from "react";
-
+import Swal from 'sweetalert2';
 
 // import { Container, Form, Modal, Row } from 'react-bootstrap';
 
@@ -62,26 +62,22 @@ function TableUsers() {
     // }
 
 
-async function getUserById(id){
+    async function getUserById(id) {
 
-    const response = await fetch(url + id)
-         
-
-    const data = await response.json();
-
-    setDataUser(data);
-
-}
+        const response = await fetch(url + id)
+        const data = await response.json();
+        setDataUser(data);
+    }
 
 
 
-    async function openClose(id) { 
+    async function openClose(id) {
 
-         await getUserById(id);
+        await getUserById(id);
 
         if (openModal === false) {
 
-           
+
             setOpenModal(true)
             console.log(dataUser)
 
@@ -95,8 +91,33 @@ async function getUserById(id){
     }
 
 
-    function handleChange(e){
+    const handleChange = ({ target }) => {
+        //Cada vez que haya un cambio se va a guardar el valor en el estado data
+        setDataUser({
+            ...dataUser,
+            [target.name]: target.value
+        })
+    }
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await axios.put(`${url}/${dataUser._id}`, dataUser);
+        //console.log(response);  
+        if (response.status === 200) {
+            Swal.fire(
+                'Cambio Guardado!',
+                `El estudiante <strong> ${dataUser.nombre} ${dataUser.apellido}</strong> ha sido actualizado exitosamente!`,
+                'success'
+            )
+            
+        }
+        else {
+            Swal.fire(
+                'Error!',
+                'Hubo un problema al actualizar el estudiante!',
+                'error'
+            )
+        }
     }
 
 
@@ -167,34 +188,34 @@ async function getUserById(id){
 
 
             <div className={openModal ? 'modal1 abrir' : openModal === false ? 'modal1 cerrar' : 'modal1'}>
-   
-                { dataUser != null ? (
 
-                  <form class="contenidoModal">
+                {dataUser != null ? (
+
+                    <form class="contenidoModal" onSubmit={handleSubmit} action="" method="post">
 
                         <span class="cerrarModal"><i class="fa-solid fa-xmark" onClick={() => { openClose() }}></i></span>
                         <h2>Usuarios</h2>
                         <label>ID</label><br />
-                        <input  type="number" value={dataUser._id}/><br />
+                        <input type="number" value={dataUser._id}  /><br />
                         <label>Nombre</label><br />
-                        <input  type="text" value={dataUser.nombre}/><br />
+                        <input type="text" value={dataUser.nombre} onChange={handleChange} /><br />
                         <label>Apellido</label><br />
-                        <input  type="text" value={dataUser.apellido}/><br />
+                        <input type="text" value={dataUser.apellido} onChange={handleChange} /><br />
                         <label>email</label><br />
-                        <input  type="email" value={dataUser.email}/><br />
+                        <input type="email" value={dataUser.email} onChange={handleChange} /><br />
                         <label>Telefono</label><br />
-                        <input  type="number" value={dataUser.telefono}/><br />
+                        <input type="number" value={dataUser.telefono} onChange={handleChange} /><br />
                         <label>Pais</label><br />
-                        <input  type="text" value={dataUser.paisorigen}/><br />
+                        <input type="text" value={dataUser.paisorigen} onChange={handleChange} /><br />
 
 
-                      
-                        <button class="btn">Guardar cambios</button>
+
+                        <button class="btn" type="submit">Guardar cambios</button>
 
 
-                </form>
+                    </form>
 
-):(<div>ci</div>)}      
+                ) : (<div>ci</div>)}
             </div>
 
 
