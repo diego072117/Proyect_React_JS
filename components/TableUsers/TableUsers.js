@@ -19,6 +19,9 @@ function TableUsers() {
     const [openModal, setOpenModal] = useState(false)
     const [dataUser, setDataUser] = useState(null)
 
+    
+    const initialState = { _id: 0, nombre: ""};     
+
     // const [upList,setUplist]=useState([false]);
 
     const getData = async () => {
@@ -196,17 +199,17 @@ function TableUsers() {
                         <span class="cerrarModal"><i class="fa-solid fa-xmark" onClick={() => { openClose() }}></i></span>
                         <h2>Usuarios</h2>
                         <label>ID</label><br />
-                        <input type="number" value={dataUser._id}  /><br />
+                        <input name="_id" type="number" value={dataUser._id}  /><br />
                         <label>Nombre</label><br />
-                        <input type="text" value={dataUser.nombre} onChange={handleChange} /><br />
+                        <input name="nombre" type="text" value={dataUser.nombre} onChange={handleChange} /><br />
                         <label>Apellido</label><br />
-                        <input type="text" value={dataUser.apellido} onChange={handleChange} /><br />
+                        <input name="apellido" type="text" value={dataUser.apellido} onChange={handleChange} /><br />
                         <label>email</label><br />
-                        <input type="email" value={dataUser.email} onChange={handleChange} /><br />
+                        <input name="email" type="email" value={dataUser.email} onChange={handleChange} /><br />
                         <label>Telefono</label><br />
-                        <input type="number" value={dataUser.telefono} onChange={handleChange} /><br />
+                        <input name="telefono" type="number" value={dataUser.telefono} onChange={handleChange} /><br />
                         <label>Pais</label><br />
-                        <input type="text" value={dataUser.paisorigen} onChange={handleChange} /><br />
+                        <input name="paisorigen" type="text" value={dataUser.paisorigen} onChange={handleChange} /><br />
 
 
 
@@ -215,7 +218,7 @@ function TableUsers() {
 
                     </form>
 
-                ) : (<div>ci</div>)}
+                ) : (<div></div>)}
             </div>
 
 
