@@ -29,7 +29,7 @@
     width: 100%;
 	height: 100%;
     position: relative;
-    margin-top: -15em;
+    /* margin-top: -29em; */
     overflow: auto;
     text-align: center;
     transition: transform .6s ease;
@@ -95,15 +95,22 @@
 
  .btn{
     cursor: pointer;
+	background-color: blueviolet;
+	margin: 15px;
+	color: #FFFFFF;
+	width: 40%;
+	padding: 1rem 0;
+	text-align: center;
+	border-radius: 10px;
+	align-items: center;
  }
 
- 
  .cerrar {
 	transform: translateY(-1000em);
 }
 
 .abrir {
-	transform: translateY(-335.5em);
+	transform: translateY(-371.4em);
 }
    
 

@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useEffect, useState } from "react";
 import Swal from 'sweetalert2';
 
+
 // import { Container, Form, Modal, Row } from 'react-bootstrap';
 
 
@@ -18,6 +19,8 @@ function TableUsers() {
     const [search, setSearch] = useState("")
     const [openModal, setOpenModal] = useState(false)
     const [dataUser, setDataUser] = useState(null)
+
+   
 
 
     const initialState = { _id: 0, nombre: "" };
@@ -112,6 +115,8 @@ function TableUsers() {
                 `El estudiante <strong> ${dataUser.nombre} ${dataUser.apellido}</strong> ha sido actualizado exitosamente!`,
                 'success'
             )
+          
+      
 
         }
         else {
@@ -123,6 +128,9 @@ function TableUsers() {
         }
     }
 
+    
+
+
 
 
     return (
@@ -131,7 +139,7 @@ function TableUsers() {
         <div className="fondo-dashboard">
 
 
-
+    
 
             <div id="container-table-users">
                 <div className="buscar-user">
@@ -145,14 +153,14 @@ function TableUsers() {
                             <th className="th-users">Tipo Doc</th>
                             <th className="th-users">Nombre</th>
                             <th className="th-users">Apellido</th>
-                            {/* <th className="th-users">Fecha nacimiento</th>
+                            <th className="th-users">Fecha nacimiento</th>
                             <th className="th-users">Genero</th>
                             <th className="th-users">Email</th>
                             <th className="th-users">Telefono</th>
                             <th className="th-users">Pais</th>
                             <th className="th-users">password</th>
                             <th className="th-users">Rol</th>
-                            <th className="th-users">Img</th> */}
+                            <th className="th-users">Img</th> 
                             <th className="th-users">Acciones</th>
 
                         </tr>
@@ -164,14 +172,14 @@ function TableUsers() {
                                 <td className="td-users">{list.tipodoc}</td>
                                 <td className="td-users">{list.nombre}</td>
                                 <td className="td-users">{list.apellido}</td>
-                                {/* <td className="td-users">{list.fnacimiento}</td>
+                                <td className="td-users">{list.fnacimiento}</td>
                                 <td className="td-users">{list.genero}</td>
                                 <td className="td-users">{list.email}</td>
                                 <td className="td-users">{list.telefono}</td>
                                 <td className="td-users">{list.paisorigen}</td>
                                 <td className="td-users">{list.password}</td>
                                 <td className="td-users">{list.tipouser}</td> 
-                                <td className="td-users">{list.img}</td>*/}
+                                <td className="td-users">{list.img}</td>
                                 <td className="td-users-edit">
                                     <i class="fa-solid fa-user-pen edit" onClick={() => { openClose(list._id) }}></i>
                                     {/* <button onClick={() => setID(list._id)} >Editar</button> */}
@@ -218,15 +226,17 @@ function TableUsers() {
 
 
                             <button class="btn" type="submit">Guardar cambios</button>
+                           
 
                         </div>
+                        
                     </form>
 
                 ) : (<div></div>)}
             </div>
 
 
-
+           
 
 
         </div>
