@@ -168,13 +168,13 @@ function TableUsers() {
                     <tbody>
                         {results.map((list, index) => (
                             <tr key={list._id}>
-                                <td className="td-users">{list._id}</td>
-                                <td className="td-users">{list.tipodoc}</td>
-                                <td className="td-users">{list.nombre}</td>
-                                <td className="td-users">{list.apellido}</td>
-                                <td className="td-users">{list.fnacimiento}</td>
-                                <td className="td-users">{list.genero}</td>
-                                <td className="td-users">{list.email}</td>
+                                <td className="td-users ">{list._id}</td>
+                                <td className="td-users ">{list.tipodoc}</td>
+                                <td className="td-users ">{list.nombre}</td>
+                                <td className="td-users ">{list.apellido}</td>
+                                <td className="td-users ">{list.fnacimiento}</td>
+                                <td className="td-users ">{list.genero}</td>
+                                <td className="td-users ">{list.email}</td>
                                 <td className="td-users">{list.telefono}</td>
                                 <td className="td-users">{list.paisorigen}</td>
                                 <td className="td-users">{list.password}</td>
